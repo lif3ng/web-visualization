@@ -1,0 +1,15 @@
+{
+  "name": "web-visualization",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "lif3ng",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@demosify/core": "^0.6.0"
+  },
+  "scripts": {
+    "start": "demosify --serve",
+    "build":"demosify --prod"
+  }
+}

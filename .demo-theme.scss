@@ -1,0 +1,20 @@
+$c-bg: #eee;
+$c-font: #333;
+$c-gap: #999;
+$c-highlight: #3c93ed;
+$c-console-bg: #eee;
+$c-console-bg-odd: #ddd;
+.view-lines {
+  color: #ccc;
+}
+
+.editor-tabs{
+  margin: 0;
+  padding: 0 10px;
+  .editor-tab{
+    padding-top: 20px;
+  }
+}
+.editor-tabTransformer {
+  display: none;
+}
