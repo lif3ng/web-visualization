@@ -6,10 +6,14 @@
   "license": "MIT",
   "private": true,
   "devDependencies": {
-    "@demosify/core": "^0.6.0"
+    "@demosify/core": "^0.6.0",
+    "vuepress": "^1.5.2"
   },
   "scripts": {
-    "start": "demosify --serve",
-    "build":"demosify --prod"
+    "demo:start": "demosify --serve",
+    "demo:build": "demosify --prod",
+    "note:start": "vuepress dev notes",
+    "note:build": "vuepress build notes",
+    "buildall": "vuepress build notes && demosify --prod"
   }
 }
