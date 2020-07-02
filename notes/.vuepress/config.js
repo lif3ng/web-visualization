@@ -13,7 +13,6 @@ module.exports = {
         ]
     },
     chainWebpack(config) {
-        console.log(config.module.rule('load-demo').test(/\.md/))
         config.module.rule('load-demo').test(/\.md/).pre().use('relove-demo-loader').loader(path.resolve(__dirname, 'resolveDemo.js'))
     }
 }
