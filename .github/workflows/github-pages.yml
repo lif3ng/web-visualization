@@ -9,7 +9,7 @@ on:
     branches: [ master ]
 
 jobs:
-  build:
+  gen-pages:
 
     runs-on: ubuntu-latest
 
@@ -27,4 +27,4 @@ jobs:
     - run: yarn
     - run: yarn buildall
     - run: sh scripts/mergeNoteDemo.sh
-    - run: cd notes/.vuepress/dist; git push -f https://lif3ng:${{ secrets.GITHUB_TOKEN }}@github.com/lif3ng/web-visualization.git master:gh-pages'''
+    - run: cd notes/.vuepress/dist; git push -f https://lif3ng:${{ secrets.GITHUB_TOKEN }}@github.com/lif3ng/web-visualization.git master:gh-pages
