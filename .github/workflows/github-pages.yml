@@ -25,6 +25,5 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: node -v
     - run: yarn
-    - run: yarn buildall
-    - run: sh scripts/mergeNoteDemo.sh
+    - run: baseurl=/web-visualization/ yarn buildmerge
     - run: cd notes/.vuepress/dist; git push -f https://lif3ng:${{ secrets.GITHUB_TOKEN }}@github.com/lif3ng/web-visualization.git master:gh-pages
