@@ -1,3 +1,4 @@
+const baseURL = require('./scripts/getBaseUrl')
 module.exports = {
   name: '可视化练习',
   themeFile: '.demo-theme.scss',
@@ -5,6 +6,6 @@ module.exports = {
   demoList: '.demoList.js',
   homePage: 'https://github.com/lif3ng/web-visualization',
   output: {
-    publicUrl: '/web-visualization/demos'
+    publicUrl: `${baseURL}demos`
   },
 }

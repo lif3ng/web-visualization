@@ -1,8 +1,9 @@
 const path = require('path')
+const baseURL = require('../../scripts/getBaseUrl');
 module.exports = {
     title: 'Hello VuePress',
     description: 'Just playing around',
-    base: '/web-visualization/',
+    base: baseURL,
     themeConfig: {
         navbar: false,
         sidebar: [

@@ -11,3 +11,5 @@ git config --local user.name "lif3ng"
 
 git add -A
 git commit -m 'deploy'
+
+echo dist path: $(pwd)
