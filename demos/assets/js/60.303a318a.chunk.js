@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[60],{465:function(n,a,s){"use strict";s.r(a),a.default='<canvas width="555" height="555" ></canvas>\n'}}]);
